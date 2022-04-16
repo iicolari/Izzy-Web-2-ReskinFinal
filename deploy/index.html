@@ -9,130 +9,222 @@
     <title>PicturesofDogs</title>
   </head>
 
-  
-
   <body>
-    <header>
-      <nav>
-        <img src="img/logo/logo.svg" alt="PicturesofDogs.com paw logo"/>
-        <p>PicturesofDogs.com</p>
-      </nav>
-      <div class="search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search Photos" name="search">
-          <button type="submit">
-            <img src="img/icon/search.svg">
-          </button>
-        </form>
+
+    <header class="container">
+      <div class="content">
+        <div>
+          <img src="img/logo/logo-small.svg" alt="PicturesofDogs.com paw logo"/>
+        </div>
       </div>
     </header>
+
+      <div class="search container">
+        <div class="content">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search Photos" name="search">
+            <button type="submit">
+              <img src="img/icon/search.svg" alt="search icon">
+            </button>
+          </form>
+        </div>
+      </div>
+    
   
     <!--hero 1-->
-    <section>
+    <section class="hero">
       <img src="img/hero/prance.jpg" alt="golden retriever puppy prancing"/>
-    </section>
+    </section> 
+
+    <!--banners-->
+    <div class="banners container">
+      <div class="content">
+        <ul>
+          <li><strong>Feeling Sad?</strong></li>
+          <li>Click here to view cute dogs</li>
+        </ul>
+        <a href="#"><img src="img/icon/arrow.svg" alt="arrow">View</a> <!--Add Link?-->
+      </div>
+    </div>
+
+     <div class="banners container">
+       <div class="content">
+         <ul>
+          <li><strong>Breed of The Day: </strong>Golden Retriever</li>
+          <li><strong>Dog of The Day: </strong>Francine</li>
+        </ul>
+          <a href="#"><img src="img/icon/arrow.svg" alt="arrow">View</a> <!--Add Link?-->
+        </div>
+      </div>
+
+    <!--Start Here-->
+    <div class="start-here container">
+      <div class="content">
+        <ul>
+          <li>Want to Submit a Photo?</li>
+          <li><button onclick="">Start here</button></li>
+        </ul>
+        <img src="img/cards/puppy.png" alt=puppy> 
+      </div>
+    </div>
   
-    <!--bar-->
-    <h3>Feeling Sad?</h3>
-    <p>Click here to view cute dogs</p>
-    <p><a href=""></a>View</p> <!--Add Link and icon-->
+    <div class="start-here container">
+      <div class="content">
+        <ul>
+          <li>Visit Our Blog!</li>
+          <li><button onclick="">Start here</button></li>
+        </ul>
+        <img src="img/cards/collie.png" alt=collie>
+      </div>
+    </div>
   
-    <p><strong>Breed of The Day: </strong>Golden Retriever</p>
-    <p><strong>Dog of The Day: </strong>Francine</p>
-    <p><a href=""></a>View</p> <!--Add Link and icon-->
-  
-    <!--cards 1-->
-    <p>Want to Submit a Photo?</p>
-    <button onclick="">Start here</button>
-    <img src=""/> <!--Add Circle Photo-->
-  
-    <p>Visit Our Blog!</p>
-    <button onclick="">Start here</button>
-    <img src=""/> <!--Add Circle Photo-->
-  
-    <!--photo grid-->
-    <img src="img/hero/corgi.jpg" alt="corgi puppy"/>
-    <img src="img/hero/silly.jpg" alt="dauchsund with his tounge out"/>
-    <img src="img/hero/tounge.jpg" alt="golden retriever puppy with his tounge out"/>
-  
-  
-    <!--cards 2-->
+    <!--Photo Grid-->
     <section>
-      <h2>Popular Collections</h2>
-  
-      <img src="img/cards/cute.jpg" alt="cute dauchsund puppy"/>
-      <h3>CUTE PUPS</h3>
-      <p>An (almost) endless scroll of the cutest dogs you'll ever see.</p>
-      <button onclick="">Browse</button>
-  
-      <img src="img/cards/costume.jpg" alt="dog in a costume"/>
-      <h3>PUPS IN COSTUMES</h3>
-      <p>Silly photos of dogs in costumes.</p>
-      <button onclick="">Browse</button>
-  
-      <img src="img/cards/tiny.jpg" alt="tiny dog"/>
-      <h3>TINY PUPS</h3>
-      <p>Dogs so small you can't even see them.</p>
-      <button onclick="">Browse</button>
-  
-      <img src="img/cards/sleepy.jpg" alt="sleeping dog"/>
-      <h3>SLEEPY PUPS</h3>
-      <p>Shhh! The dogs are sleeping!</p>
-      <button onclick="">Browse</button>
-  
-      <img src="img/cards/happy.jpg" alt="happy dog"/>
-      <h3>HAPPY PUPS</h3>
-      <p>May you be as happy as these dogs are!</p>
-      <button onclick="">Browse</button>
-      
+      <div class="photo-grid">
+        <img src="img/hero/corgi.jpg" alt="corgi puppy"/>
+      </div>
+      <div class="photo-grid">
+        <img src="img/hero/silly.jpg" alt="dauchsund with his tounge out"/>
+      </div>
+
     </section>
   
+    <!--Popular Collections-->
+    <div class="collections container">
+      <h2 class="content">Popular Collections</h2>
+    </div>
+  
+    <article>
+      <div class="collections">
+        <img src="img/cards/cute.jpg" alt="cute dauchsund puppy"/>
+      </div>
+      <div class="collections container">
+        <div class="content">
+          <h3>CUTE PUPS</h3>
+          <p>An (almost) endless scroll of the cutest dogs you'll ever see.</p>
+          <button onclick="">Browse</button>
+        </div>
+      </div>
+    </article>
+
+   <article>
+     <div class="collections">
+        <img src="img/cards/costume.jpg" alt="dog in a costume"/>
+      </div>
+      <div class="collections container">
+        <div class="content">
+          <h3>PUPS IN COSTUMES</h3>
+          <p>Silly photos of dogs in costumes.</p>
+          <button onclick="">Browse</button>
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <div class="collections">
+        <img src="img/cards/tiny.jpg" alt="tiny dog"/>
+      </div>
+      <div class="collections container">
+        <div class="content">
+          <h3>TINY PUPS</h3>
+          <p>Dogs so small you can't even see them.</p>
+          <button onclick="">Browse</button>
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <div class="collections">
+        <img src="img/cards/sleepy.jpg" alt="sleeping dog"/>
+      </div>
+      <div class="collections container">
+        <div class="content">
+          <h3>SLEEPY PUPS</h3>
+          <p>Shhh! The dogs are sleeping!</p>
+          <button onclick="">Browse</button>
+        </div>
+      </div>
+    </article>
+    
+    <article>
+      <div class="collections">
+        <img src="img/cards/happy.jpg" alt="happy dog"/>
+      </div>
+      <div class="collections container">
+        <div class="content">
+          <h3>HAPPY PUPS</h3>
+          <p>May you be as happy as these dogs are!</p>
+          <button onclick="">Browse</button>
+        </div>
+      </div>
+    </article>
+  
+    <!--footer-->
       <footer>
+      
+        <!--I feel like I should be making a grid with rows and columns? Is it ok that I broke it up like this?-->
+      <div class="footer container">
+        <div class="content">
+          <h3>Locations</h3>
+            <h4>Connecticut</h4>
+            <ul class="locations">
+              <li><embed src="img/icon/location.svg" alt="location icon"/></li>
+              <li>20 Tolland Turnpike <br> Manchester, CT 06042-1763</li>
+            </ul>
+            <ul class="locations">
+              <li><embed src="img/icon/mobile.svg" alt="phone icon"/></li>
+              <li>(800) 829-4161</li>
+            </ul>
+
+            <h4>Massachusetts</h4>
+            <ul class="locations">
+              <li><embed src="img/icon/location.svg" alt="location icon"/></li>
+              <li>136 Eastman Street South <br> Easton,  MA 02375</li>
+            </ul>
+            <ul class="locations">
+              <li><embed src="img/icon/mobile.svg" alt="phone icon"/></li>
+              <li>(877) 526-9213</li>
+            </ul>
+            
+            <h4>Nova Scotia</h4>
+            <ul class="locations">
+              <li><embed src="img/icon/location.svg" alt="location icon"/></li>
+              <li>318 Park Road <br> Elmsdale, NS B2S 0G25</li>
+            </ul>
+            <ul class="locations">
+              <li><embed src="img/icon/mobile.svg" alt="phone icon"/></li>
+              <li>(902) 883-7450</li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="newsletter container">
+        <div class="content">
+          <h3>Newsletter Sign Up</h3>
+          <form action="/action_page.php">
+            <input type="text" placeholder="Email Adress" name="email">
+            <br>
+            <button type="button" onclick="">Sign Up</button>
+          </form>
+        </div>
+      </div>
   
-        <h4>Locations</h4>
-        
-        <h5>Connecticut</h5>
-        <ul>
-          <li><embed src="img/icon/location.svg"/></li>
-          <li>20 Tolland  Turnpike
-            Manchester, CT 06042-1763</li>
-          <li><embed src="img/icon/mobile.svg"/></li>
-          <li>(800) 829-4161</li>
-        </ul>
-  
-        <h5>Massachusetts</h5>
-        <ul>
-          <li><embed src="img/icon/location.svg"/></li>
-          <li>136 Eastman Street South 
-            Easton,  MA 02375</li>
-            <li><embed src="img/icon/mobile.svg"/></li>
-          <li>(877)  526-9213</li>
-       </ul>
-  
-        <h5>Nova Scotia</h5>
-        <ul>
-          <li><embed src="img/icon/location.svg"/></li>
-          <li>318 Park Road 
-            Elmsdale, NS B2S 0G25</li>
-            <li><embed src="img/icon/mobile.svg"/></li>
-          <li>(902) 883-7450</li>
-        </ul>
-        
-  
-        <h4>Newsletter Sign Up</h4>
-        <form action="/action_page.php">
-          <input type="text" placeholder="Email Adress" name="email">
-          <button type="button" onclick="">Sign Up</button>
-        </form>
-  
-  
-        <h4>Follow Us</h4>
-        <img src="img/logo/youtube.svg"/> <!--Logos didnt copy over from Figma, file is blank-->
-        <img src="img/logo/twitter.svg"/> <!--Link logos to websites?-->
-        <img src="img/logo/instagram.svg"/>
-        <img src="img/logo/facebook.svg"/>
-  
+    <!--I dont know what's going on this... it's displaying weird but when I inspect it's ok?-->
+    <!--Link logos to websites?-->
+      <div class="follow container">
+        <div class="content">
+          <h3>Follow Us</h3>
+          <ul class="follow">
+            <li><img src="img/logo/youtube.svg" alt="youtube icon"/></li>
+            <li><img src="img/logo/twitter.svg" alt="twitter icon"/></li>
+            <li><img src="img/logo/instagram.svg" alt="instagram icon"/></li>
+            <li><img src="img/logo/facebook.svg" alt="facebook icon"/></li>
+          </ul>
+        </div>
+      </div>
+
       </footer>
-          <script src="js/scripts-min.js"></script>
+
+    <script src="js/scripts-min.js"></script>
   </body>
 </html>

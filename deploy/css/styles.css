@@ -352,6 +352,15 @@ template {
 /* =============
     Base
 ============= */
+.container {
+  display: grid;
+  grid-template-columns: 18px auto 18px;
+  grid-template-areas: ". content .";
+}
+.container .content {
+  grid-area: content;
+}
+
 /* =============
     Typography
 ============= */
@@ -385,3 +394,61 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+    Search
+============= */
+/* =============
+    Hero
+============= */
+.hero img {
+  width: 100%;
+}
+
+/* =============
+    Banners
+============= */
+.banners .content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+/* =============
+    Start Here
+============= */
+.start-here .content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+/* =============
+    Photo Grid
+============= */
+.photo-grid img {
+  width: 100%;
+}
+
+/* =============
+    Popular Collections
+============= */
+.collections img {
+  width: 100%;
+}
+
+/* =============
+    Locations
+============= */
+.locations {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+/* =============
+    Newsletter
+============= */
+/* =============
+    Follow
+============= */
+.follow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
