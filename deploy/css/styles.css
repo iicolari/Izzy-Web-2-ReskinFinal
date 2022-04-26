@@ -361,6 +361,11 @@ template {
   grid-area: content;
 }
 
+.ul .li {
+  list-style: none;
+  padding: none;
+}
+
 /* =============
     Typography
 ============= */
@@ -394,6 +399,15 @@ textarea {
 /* =============
     Footer
 ============= */
+.footer {
+  display: grid;
+}
+@media md {
+  .footer {
+    grid-template-columns: 2, 1fr;
+  }
+}
+
 /* =============
     Search
 ============= */
@@ -448,7 +462,7 @@ textarea {
 /* =============
     Follow
 ============= */
-.follow {
+.follow .ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }

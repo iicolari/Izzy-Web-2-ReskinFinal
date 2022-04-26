@@ -37,6 +37,7 @@
     </section> 
 
     <!--banners-->
+    <!--here, i feel like i need to create a grid inside of a grid-->
     <div class="banners container">
       <div class="content">
         <ul>
@@ -94,11 +95,9 @@
       <h2 class="content">Popular Collections</h2>
     </div>
   
-    <article>
-      <div class="collections">
+    <article class="collections">
         <img src="img/cards/cute.jpg" alt="cute dauchsund puppy"/>
-      </div>
-      <div class="collections container">
+      <div class="container">
         <div class="content">
           <h3>CUTE PUPS</h3>
           <p>An (almost) endless scroll of the cutest dogs you'll ever see.</p>
@@ -107,11 +106,9 @@
       </div>
     </article>
 
-   <article>
-     <div class="collections">
+   <article class="collections">
         <img src="img/cards/costume.jpg" alt="dog in a costume"/>
-      </div>
-      <div class="collections container">
+      <div class="container">
         <div class="content">
           <h3>PUPS IN COSTUMES</h3>
           <p>Silly photos of dogs in costumes.</p>
@@ -120,11 +117,9 @@
       </div>
     </article>
 
-    <article>
-      <div class="collections">
+    <article class="collections">
         <img src="img/cards/tiny.jpg" alt="tiny dog"/>
-      </div>
-      <div class="collections container">
+      <div class="container">
         <div class="content">
           <h3>TINY PUPS</h3>
           <p>Dogs so small you can't even see them.</p>
@@ -133,11 +128,9 @@
       </div>
     </article>
 
-    <article>
-      <div class="collections">
+    <article class="collections">
         <img src="img/cards/sleepy.jpg" alt="sleeping dog"/>
-      </div>
-      <div class="collections container">
+      <div class="container">
         <div class="content">
           <h3>SLEEPY PUPS</h3>
           <p>Shhh! The dogs are sleeping!</p>
@@ -146,11 +139,9 @@
       </div>
     </article>
     
-    <article>
-      <div class="collections">
+    <article class="collections">
         <img src="img/cards/happy.jpg" alt="happy dog"/>
-      </div>
-      <div class="collections container">
+      <div class="container">
         <div class="content">
           <h3>HAPPY PUPS</h3>
           <p>May you be as happy as these dogs are!</p>
@@ -160,59 +151,59 @@
     </article>
   
     <!--footer-->
-      <footer>
+      <footer class="container">
+        <div class="content">
       
-        <!--I feel like I should be making a grid with rows and columns? Is it ok that I broke it up like this?-->
-      <div class="footer container">
-        <div class="content">
-          <h3>Locations</h3>
-            <h4>Connecticut</h4>
-            <ul class="locations">
-              <li><embed src="img/icon/location.svg" alt="location icon"/></li>
-              <li>20 Tolland Turnpike <br> Manchester, CT 06042-1763</li>
-            </ul>
-            <ul class="locations">
-              <li><embed src="img/icon/mobile.svg" alt="phone icon"/></li>
-              <li>(800) 829-4161</li>
-            </ul>
+          <!--I feel like I should be making a grid with rows and columns? Is it ok that I broke it up like this?-->
+        <div class="footer container">
+          <div class="content">
+            <h3>Locations</h3>
+              <h4>Connecticut</h4>
+              <ul class="locations">
+                <li><embed src="img/icon/location.svg" alt="location icon"/></li>
+                <li>20 Tolland Turnpike <br> Manchester, CT 06042-1763</li>
+              </ul>
+              <ul class="locations">
+                <li><embed src="img/icon/mobile.svg" alt="phone icon"/></li>
+                <li>(800) 829-4161</li>
+              </ul>
 
-            <h4>Massachusetts</h4>
-            <ul class="locations">
-              <li><embed src="img/icon/location.svg" alt="location icon"/></li>
-              <li>136 Eastman Street South <br> Easton,  MA 02375</li>
-            </ul>
-            <ul class="locations">
-              <li><embed src="img/icon/mobile.svg" alt="phone icon"/></li>
-              <li>(877) 526-9213</li>
-            </ul>
-            
-            <h4>Nova Scotia</h4>
-            <ul class="locations">
-              <li><embed src="img/icon/location.svg" alt="location icon"/></li>
-              <li>318 Park Road <br> Elmsdale, NS B2S 0G25</li>
-            </ul>
-            <ul class="locations">
-              <li><embed src="img/icon/mobile.svg" alt="phone icon"/></li>
-              <li>(902) 883-7450</li>
-            </ul>
+              <h4>Massachusetts</h4>
+              <ul class="locations">
+                <li><embed src="img/icon/location.svg" alt="location icon"/></li>
+                <li>136 Eastman Street South <br> Easton,  MA 02375</li>
+              </ul>
+              <ul class="locations">
+                <li><embed src="img/icon/mobile.svg" alt="phone icon"/></li>
+                <li>(877) 526-9213</li>
+              </ul>
+              
+              <h4>Nova Scotia</h4>
+              <ul class="locations">
+                <li><embed src="img/icon/location.svg" alt="location icon"/></li>
+                <li>318 Park Road <br> Elmsdale, NS B2S 0G25</li>
+              </ul>
+              <ul class="locations">
+                <li><embed src="img/icon/mobile.svg" alt="phone icon"/></li>
+                <li>(902) 883-7450</li>
+              </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="newsletter container">
-        <div class="content">
-          <h3>Newsletter Sign Up</h3>
-          <form action="/action_page.php">
-            <input type="text" placeholder="Email Adress" name="email">
-            <br>
-            <button type="button" onclick="">Sign Up</button>
-          </form>
+        <div class="newsletter container footer">
+          <div class="content">
+            <h3>Newsletter Sign Up</h3>
+            <form action="/action_page.php">
+              <input type="text" placeholder="Email Adress" name="email">
+              <br>
+              <button type="button" onclick="">Sign Up</button>
+            </form>
+          </div>
         </div>
-      </div>
-  
-    <!--I dont know what's going on this... it's displaying weird but when I inspect it's ok?-->
-    <!--Link logos to websites?-->
-      <div class="follow container">
-        <div class="content">
+    
+      <!--Link logos to websites?-->
+
+        <div class="follow">
           <h3>Follow Us</h3>
           <ul class="follow">
             <li><img src="img/logo/youtube.svg" alt="youtube icon"/></li>
@@ -221,8 +212,8 @@
             <li><img src="img/logo/facebook.svg" alt="facebook icon"/></li>
           </ul>
         </div>
-      </div>
 
+        </div>
       </footer>
 
     <script src="js/scripts-min.js"></script>
