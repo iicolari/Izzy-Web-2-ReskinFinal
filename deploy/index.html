@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>PicturesofDogs</title>
   </head>
 
   <body>
 
+    <!--Header-->
     <header class="container">
       <div class="content">
         <div>
@@ -19,6 +23,7 @@
       </div>
     </header>
 
+      <!--Search Bar-->
       <div class="search container">
         <div class="content">
           <form action="/action_page.php">
@@ -37,128 +42,145 @@
     </section> 
 
     <!--banners-->
-    <!--here, i feel like i need to create a grid inside of a grid-->
-    <div class="banners container">
-      <div class="content">
-        <ul>
-          <li><strong>Feeling Sad?</strong></li>
-          <li>Click here to view cute dogs</li>
-        </ul>
-        <a href="#"><img src="img/icon/arrow.svg" alt="arrow">View</a> <!--Add Link?-->
-      </div>
-    </div>
+    <section class="banners">
 
-     <div class="banners container">
-       <div class="content">
-         <ul>
-          <li><strong>Breed of The Day: </strong>Golden Retriever</li>
-          <li><strong>Dog of The Day: </strong>Francine</li>
-        </ul>
-          <a href="#"><img src="img/icon/arrow.svg" alt="arrow">View</a> <!--Add Link?-->
+      <div class="banners-1">
+        <div class="container">
+          <div class="content">
+            <div class="text">
+              <p><strong>Feeling Sad?</strong></p><br>
+              <p>Click here to view cute dogs</p>
+            </div>
+            <a href="#"><img src="img/icon/arrow.svg" alt="arrow">View</a> <!--Add Link?-->
+          </div>
         </div>
       </div>
 
+      <div class="banners-2">
+        <div class="container banners-2">
+            <div class="content">
+              <div class=text>
+                <p><strong>Breed of The Day: </strong>Golden Retriever</p><br>
+                <p><strong>Dog of The Day: </strong>Francine</p>
+              </div>
+                <a href="#"><img src="img/icon/arrow.svg" alt="arrow">View</a> <!--Add Link?-->
+            </div>
+          </div>
+        </div>
+
+      </section>
+
     <!--Start Here-->
-    <div class="start-here container">
+    <!--I cant get this section to display vertically for mobile view!-->
+    <!--I also can't get the info to display side by side-->
+    <section class="start-here">
+
+        <div class="container card-1">
+          <div class="content">
+            <div class="sub-content">
+              <h3>Want to Submit a Photo?</h3>
+              <button onclick="">Start here</button>
+            </div>
+            <img src="img/cards/puppy.png" alt=puppy> 
+          </div>
+        </div>
+
+    <div class="container card-2">
       <div class="content">
-        <ul>
-          <li>Want to Submit a Photo?</li>
-          <li><button onclick="">Start here</button></li>
-        </ul>
-        <img src="img/cards/puppy.png" alt=puppy> 
+        <div class="sub-content">
+          <h3>Visit Our Blog!</h3>
+          <button onclick="">Start here</button>
+        </div>
+        <img src="img/cards/collie.png" alt=collie> 
       </div>
     </div>
-  
-    <div class="start-here container">
-      <div class="content">
-        <ul>
-          <li>Visit Our Blog!</li>
-          <li><button onclick="">Start here</button></li>
-        </ul>
-        <img src="img/cards/collie.png" alt=collie>
-      </div>
-    </div>
-  
-    <!--Photo Grid-->
-    <section>
-      <div class="photo-grid">
-        <img src="img/hero/corgi.jpg" alt="corgi puppy"/>
-      </div>
-      <div class="photo-grid">
-        <img src="img/hero/silly.jpg" alt="dauchsund with his tounge out"/>
-      </div>
 
     </section>
   
+    <!--Photo Grid-->
+    <!--Confused on how to exclude the third image,, honestly it's possible i dont understand grids at all-->
+    <section class="photo-grid">
+      <ul>
+        <li><img src="img/hero/corgi.jpg" alt="corgi puppy"/></li>
+        <li><img src="img/hero/silly.jpg" alt="dauchsund with his tounge out"/></li>
+        <li><img src="img/hero/tounge.jpg" alt="dog licking their nose"/></li>
+      </ul>
+    </section>
+  
     <!--Popular Collections-->
-    <div class="collections container">
-      <h2 class="content">Popular Collections</h2>
-    </div>
-  
-    <article class="collections">
-        <img src="img/cards/cute.jpg" alt="cute dauchsund puppy"/>
-      <div class="container">
-        <div class="content">
-          <h3>CUTE PUPS</h3>
-          <p>An (almost) endless scroll of the cutest dogs you'll ever see.</p>
-          <button onclick="">Browse</button>
-        </div>
-      </div>
-    </article>
+    <section class="collections">
 
-   <article class="collections">
-        <img src="img/cards/costume.jpg" alt="dog in a costume"/>
-      <div class="container">
-        <div class="content">
-          <h3>PUPS IN COSTUMES</h3>
-          <p>Silly photos of dogs in costumes.</p>
-          <button onclick="">Browse</button>
-        </div>
+      <div class="content">
+        <h2>Popular Collections</h2>
       </div>
-    </article>
-
-    <article class="collections">
-        <img src="img/cards/tiny.jpg" alt="tiny dog"/>
-      <div class="container">
-        <div class="content">
-          <h3>TINY PUPS</h3>
-          <p>Dogs so small you can't even see them.</p>
-          <button onclick="">Browse</button>
-        </div>
-      </div>
-    </article>
-
-    <article class="collections">
-        <img src="img/cards/sleepy.jpg" alt="sleeping dog"/>
-      <div class="container">
-        <div class="content">
-          <h3>SLEEPY PUPS</h3>
-          <p>Shhh! The dogs are sleeping!</p>
-          <button onclick="">Browse</button>
-        </div>
-      </div>
-    </article>
     
-    <article class="collections">
-        <img src="img/cards/happy.jpg" alt="happy dog"/>
-      <div class="container">
-        <div class="content">
-          <h3>HAPPY PUPS</h3>
-          <p>May you be as happy as these dogs are!</p>
-          <button onclick="">Browse</button>
+      <article class="collections-1">
+          <img src="img/cards/cute.jpg" alt="cute dauchsund puppy"/>
+          <div class="container">
+            <div class="content">
+              <h3>CUTE PUPS</h3>
+              <p>An (almost) endless scroll of the cutest dogs you'll ever see.</p>
+              <button onclick="">Browse</button>
+            </div>
+          </div>
+      </article>
+
+      <article class="collections-2">
+          <img src="img/cards/costume.jpg" alt="dog in a costume"/>
+          <div class="container">
+            <div class="content">
+              <h3>PUPS IN COSTUMES</h3>
+              <p>Silly photos of dogs in costumes.</p>
+              <button onclick="">Browse</button>
+            </div>
+          </div>
+      </article>
+
+      <article class="collections-3">
+          <img src="img/cards/tiny.jpg" alt="tiny dog"/>
+          <div class="container">
+            <div class="content">
+              <h3>TINY PUPS</h3>
+              <p>Dogs so small you can't even see them.</p>
+              <button onclick="">Browse</button>
+            </div>
+          </div>
+      </article>
+
+      <article class="collections-4">
+          <img src="img/cards/sleepy.jpg" alt="sleeping dog"/>
+          <div class="container">
+            <div class="content">
+              <h3>SLEEPY PUPS</h3>
+              <p>Shhh! The dogs are sleeping!</p>
+              <button onclick="">Browse</button>
+            </div>
+          </div>
+      </article>
+      
+      <article class="collections-5">
+          <img src="img/cards/happy.jpg" alt="happy dog"/>
+          <div class="container">
+            <div class="content">
+              <h3>HAPPY PUPS</h3>
+              <p>May you be as happy as these dogs are!</p>
+              <button onclick="">Browse</button>
+            </div>
         </div>
-      </div>
-    </article>
-  
+      </article>
+
+    </section>
+
     <!--footer-->
+    <!--Seems like this isn't working? cant get the background to span the whole size.  and for some reason the newsleter section is excluded?-->
       <footer class="container">
         <div class="content">
       
-          <!--I feel like I should be making a grid with rows and columns? Is it ok that I broke it up like this?-->
+          <!--Was this the dumbest way to do this? should i have made a grid with columns and rows?-->
         <div class="footer container">
           <div class="content">
-            <h3>Locations</h3>
-              <h4>Connecticut</h4>
+            <h4>Locations</h4>
+              <h5>Connecticut</h5>
               <ul class="locations">
                 <li><embed src="img/icon/location.svg" alt="location icon"/></li>
                 <li>20 Tolland Turnpike <br> Manchester, CT 06042-1763</li>
@@ -168,7 +190,7 @@
                 <li>(800) 829-4161</li>
               </ul>
 
-              <h4>Massachusetts</h4>
+              <h5>Massachusetts</h5>
               <ul class="locations">
                 <li><embed src="img/icon/location.svg" alt="location icon"/></li>
                 <li>136 Eastman Street South <br> Easton,  MA 02375</li>
@@ -178,7 +200,7 @@
                 <li>(877) 526-9213</li>
               </ul>
               
-              <h4>Nova Scotia</h4>
+              <h5>Nova Scotia</h5>
               <ul class="locations">
                 <li><embed src="img/icon/location.svg" alt="location icon"/></li>
                 <li>318 Park Road <br> Elmsdale, NS B2S 0G25</li>
@@ -192,7 +214,7 @@
 
         <div class="newsletter container footer">
           <div class="content">
-            <h3>Newsletter Sign Up</h3>
+            <h4>Newsletter Sign Up</h4>
             <form action="/action_page.php">
               <input type="text" placeholder="Email Adress" name="email">
               <br>
@@ -200,11 +222,9 @@
             </form>
           </div>
         </div>
-    
-      <!--Link logos to websites?-->
 
         <div class="follow">
-          <h3>Follow Us</h3>
+          <h4>Follow Us</h4>
           <ul class="follow">
             <li><img src="img/logo/youtube.svg" alt="youtube icon"/></li>
             <li><img src="img/logo/twitter.svg" alt="twitter icon"/></li>

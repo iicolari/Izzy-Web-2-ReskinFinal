@@ -6,4 +6,24 @@
     img{
         width: 100%
     }
+
+    ul{
+        list-style: none;
+        padding:0;
+
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+        }
+
+        @include lg{
+            grid-template-columns: 60% auto;
+        }
+
+        @include xl{
+            grid-template-areas:
+            "g1 g2"
+            "g1 g3";
+        }
+    }
 }

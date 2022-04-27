@@ -361,14 +361,38 @@ template {
   grid-area: content;
 }
 
-.ul .li {
-  list-style: none;
-  padding: none;
-}
-
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Cabin", sans-serif;
+}
+body p {
+  font-size: 16px;
+}
+body h1 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+body h2 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+body h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 27px;
+}
+body h4 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+}
+body h5 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  color: lightblue;
+}
+body footer li {
+  color: lightblue;
+}
+
 /* =============
     Buttons
 ============= */
@@ -402,6 +426,10 @@ textarea {
 .footer {
   display: grid;
 }
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
 @media md {
   .footer {
     grid-template-columns: 2, 1fr;
@@ -416,6 +444,11 @@ textarea {
 ============= */
 .hero img {
   width: 100%;
+  display: block;
+}
+
+.hero-content {
+  display: grid;
 }
 
 /* =============
@@ -426,12 +459,30 @@ textarea {
   grid-template-columns: 50% 50%;
 }
 
+.banners-1 {
+  background-color: teal;
+}
+
+.banners-2 {
+  background-color: turquoise;
+}
+
 /* =============
     Start Here
 ============= */
-.start-here .content {
+.start-here {
   display: grid;
   grid-template-columns: 50% 50%;
+}
+.start-here .subcontent {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.start-here .card-1 {
+  background-color: #247BA0;
+}
+.start-here .card-2 {
+  background-color: #247BA0;
 }
 
 /* =============
@@ -440,12 +491,52 @@ textarea {
 .photo-grid img {
   width: 100%;
 }
+.photo-grid ul {
+  list-style: none;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .photo-grid ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 992px) {
+  .photo-grid ul {
+    grid-template-columns: 60% auto;
+  }
+}
+@media (min-width: 1200px) {
+  .photo-grid ul {
+    grid-template-areas: "g1 g2" "g1 g3";
+  }
+}
 
 /* =============
     Popular Collections
 ============= */
 .collections img {
   width: 100%;
+}
+
+.collections-1 {
+  background-color: #F4AC45;
+}
+
+.collections-2 {
+  background-color: #F4AC45;
+}
+
+.collections-3 {
+  background-color: #F4AC45;
+}
+
+.collections-4 {
+  background-color: #F4AC45;
+}
+
+.collections-5 {
+  background-color: #F4AC45;
 }
 
 /* =============

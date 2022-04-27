@@ -5,9 +5,13 @@
 .footer{
     display:grid;
 
+    ul{
+        list-style: none;
+        padding:0;
+    }
+
     @media md{
         grid-template-columns: 2, 1fr;
-
     }
 
 }
