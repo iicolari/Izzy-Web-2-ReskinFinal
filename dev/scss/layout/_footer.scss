@@ -2,16 +2,26 @@
     Footer
 ============= */
 
-.footer{
-    display:grid;
+    .footer{
+        display:grid;
+        background-color: $navy;
 
-    ul{
-        list-style: none;
-        padding:0;
+        ul{
+            list-style: none;
+            padding:0;
+        }
     }
 
-    @media md{
-        grid-template-columns: 2, 1fr;
+    .follow{
+        display:grid;
+
+        ul{
+            list-style: none;
+            padding:0;
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
     }
 
-}
+    //why doesnt background go over gutter too? maybe there is a problem with my variables

@@ -3,6 +3,7 @@
 ============= */
 
 .photo-grid{
+
     img{
         width: 100%
     }
@@ -10,20 +11,24 @@
     ul{
         list-style: none;
         padding:0;
-
-        @include md{
-            display: grid;
-            grid-template-columns: 50% auto;
-        }
-
-        @include lg{
-            grid-template-columns: 60% auto;
-        }
-
-        @include xl{
-            grid-template-areas:
-            "g1 g2"
-            "g1 g3";
-        }
     }
+
+    @include md{
+        display: grid;
+        grid-template-columns: 50% auto
+    }
+
+    @include lg{
+        grid-template-columns: 60% auto
+    }
+
+    @include xl{
+        grid-template-areas:
+        "g1 g2"
+        "g1 g3";
+    }
+
 }
+
+//i cant get the third image to go away!
+//also the grid isnt working.  obviously my fault but im confused

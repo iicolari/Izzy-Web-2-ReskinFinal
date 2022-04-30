@@ -4,11 +4,13 @@
 
 .start-here{
     display:grid;
-    grid-template-columns: 50% 50%;
+    gap: 10px;
 
-    .subcontent{
+    .content{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: "img content";
+        margin-bottom: 1em;
     }
 
     .card-1{
@@ -17,6 +19,16 @@
     
     .card-2{
         background-color: #247BA0
+    }
+
+    @include md{
+        grid-template-columns: 50% 50%;
+        padding: 16px;
+    }
+
+    @include xl{
+        padding-left: 225px;
+        padding-right: 225px;
     }
 }
 

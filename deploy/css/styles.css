@@ -383,6 +383,7 @@ body h3 {
 body h4 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 20px;
+  color: white;
 }
 body h5 {
   font-family: "Roboto Condensed", sans-serif;
@@ -425,20 +426,30 @@ textarea {
 ============= */
 .footer {
   display: grid;
+  background-color: #203842;
 }
 .footer ul {
   list-style: none;
   padding: 0;
 }
-@media md {
-  .footer {
-    grid-template-columns: 2, 1fr;
-  }
+
+.follow {
+  display: grid;
+}
+.follow ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /* =============
     Search
 ============= */
+.search {
+  text-align: center;
+}
+
 /* =============
     Hero
 ============= */
@@ -454,17 +465,28 @@ textarea {
 /* =============
     Banners
 ============= */
+.banners {
+  display: grid;
+}
 .banners .content {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 3fr 1fr;
 }
-
-.banners-1 {
+.banners .banners-1 {
   background-color: teal;
 }
-
-.banners-2 {
+.banners .banners-2 {
   background-color: turquoise;
+}
+@media (min-width: 768px) {
+  .banners {
+    grid-template-columns: 3fr 5fr;
+  }
+}
+@media (min-width: 992px) {
+  .banners {
+    grid-template-columns: 50% 50%;
+  }
 }
 
 /* =============
@@ -472,17 +494,31 @@ textarea {
 ============= */
 .start-here {
   display: grid;
-  grid-template-columns: 50% 50%;
+  gap: 10px;
 }
-.start-here .subcontent {
+.start-here .content {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "img content";
+  margin-bottom: 1em;
 }
 .start-here .card-1 {
   background-color: #247BA0;
 }
 .start-here .card-2 {
   background-color: #247BA0;
+}
+@media (min-width: 768px) {
+  .start-here {
+    grid-template-columns: 50% 50%;
+    padding: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .start-here {
+    padding-left: 225px;
+    padding-right: 225px;
+  }
 }
 
 /* =============
@@ -496,18 +532,18 @@ textarea {
   padding: 0;
 }
 @media (min-width: 768px) {
-  .photo-grid ul {
+  .photo-grid {
     display: grid;
     grid-template-columns: 50% auto;
   }
 }
 @media (min-width: 992px) {
-  .photo-grid ul {
+  .photo-grid {
     grid-template-columns: 60% auto;
   }
 }
 @media (min-width: 1200px) {
-  .photo-grid ul {
+  .photo-grid {
     grid-template-areas: "g1 g2" "g1 g3";
   }
 }
@@ -519,24 +555,45 @@ textarea {
   width: 100%;
 }
 
-.collections-1 {
+.cards {
+  display: grid;
+  gap: 16px;
+  grid-template-rows: auto;
+}
+.cards .content {
+  margin-bottom: 1em;
+}
+.cards .collections-1 {
   background-color: #F4AC45;
 }
-
-.collections-2 {
+.cards .collections-2 {
   background-color: #F4AC45;
 }
-
-.collections-3 {
+.cards .collections-3 {
   background-color: #F4AC45;
 }
-
-.collections-4 {
+.cards .collections-4 {
   background-color: #F4AC45;
 }
-
-.collections-5 {
+.cards .collections-5 {
   background-color: #F4AC45;
+}
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 50% 50%;
+    padding: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .cards {
+    padding-left: 194px;
+    padding-right: 194px;
+  }
 }
 
 /* =============

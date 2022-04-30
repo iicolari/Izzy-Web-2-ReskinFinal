@@ -48,7 +48,7 @@
         <div class="container">
           <div class="content">
             <div class="text">
-              <p><strong>Feeling Sad?</strong></p><br>
+              <p><strong>Feeling Sad?</strong></p>
               <p>Click here to view cute dogs</p>
             </div>
             <a href="#"><img src="img/icon/arrow.svg" alt="arrow">View</a> <!--Add Link?-->
@@ -60,7 +60,7 @@
         <div class="container banners-2">
             <div class="content">
               <div class=text>
-                <p><strong>Breed of The Day: </strong>Golden Retriever</p><br>
+                <p><strong>Breed of The Day: </strong>Golden Retriever</p>
                 <p><strong>Dog of The Day: </strong>Francine</p>
               </div>
                 <a href="#"><img src="img/icon/arrow.svg" alt="arrow">View</a> <!--Add Link?-->
@@ -71,39 +71,37 @@
       </section>
 
     <!--Start Here-->
-    <!--I cant get this section to display vertically for mobile view!-->
-    <!--I also can't get the info to display side by side-->
     <section class="start-here">
 
-        <div class="container card-1">
-          <div class="content">
-            <div class="sub-content">
-              <h3>Want to Submit a Photo?</h3>
-              <button onclick="">Start here</button>
-            </div>
-            <img src="img/cards/puppy.png" alt=puppy> 
+      <div class="container card-1">
+        <div class="content">
+          <div class="sub-content">
+            <h3>Submit a Photo?</h3>
+            <button onclick="">Start here</button>
           </div>
+          <img src="img/cards/puppy.png" alt=puppy> 
         </div>
-
-    <div class="container card-2">
-      <div class="content">
-        <div class="sub-content">
-          <h3>Visit Our Blog!</h3>
-          <button onclick="">Start here</button>
-        </div>
-        <img src="img/cards/collie.png" alt=collie> 
       </div>
-    </div>
+
+      <div class="container card-2">
+        <div class="content">
+          <div class="sub-content">
+            <h3>Visit Our Blog!</h3>
+            <button onclick="">Start here</button>
+          </div>
+          <img src="img/cards/collie.png" alt=collie> 
+        </div>
+      </div>
 
     </section>
   
     <!--Photo Grid-->
-    <!--Confused on how to exclude the third image,, honestly it's possible i dont understand grids at all-->
+    <!--Confused on how to exclude the third image-->
     <section class="photo-grid">
       <ul>
-        <li><img src="img/hero/corgi.jpg" alt="corgi puppy"/></li>
-        <li><img src="img/hero/silly.jpg" alt="dauchsund with his tounge out"/></li>
-        <li><img src="img/hero/tounge.jpg" alt="dog licking their nose"/></li>
+        <li class="image-1"><img src="img/hero/corgi.jpg" alt="corgi puppy"/></li>
+        <li class="image-2"><img src="img/hero/silly.jpg" alt="dauchsund with his tounge out"/></li>
+        <li class="image-3"><img src="img/hero/tounge.jpg" alt="dog licking their nose"/></li>
       </ul>
     </section>
   
@@ -113,70 +111,75 @@
       <div class="content">
         <h2>Popular Collections</h2>
       </div>
-    
-      <article class="collections-1">
-          <img src="img/cards/cute.jpg" alt="cute dauchsund puppy"/>
-          <div class="container">
-            <div class="content">
-              <h3>CUTE PUPS</h3>
-              <p>An (almost) endless scroll of the cutest dogs you'll ever see.</p>
-              <button onclick="">Browse</button>
-            </div>
-          </div>
-      </article>
 
-      <article class="collections-2">
-          <img src="img/cards/costume.jpg" alt="dog in a costume"/>
-          <div class="container">
-            <div class="content">
-              <h3>PUPS IN COSTUMES</h3>
-              <p>Silly photos of dogs in costumes.</p>
-              <button onclick="">Browse</button>
+      <section class="cards">
+        <article class="collections-1">
+            <img src="img/cards/cute.jpg" alt="cute dauchsund puppy"/>
+            <div class="container">
+              <div class="content">
+                <h3>CUTE PUPS</h3>
+                <p>An (almost) endless scroll of the cutest dogs you'll ever see.</p>
+                <button onclick="">Browse</button>
+              </div>
             </div>
-          </div>
-      </article>
+        </article>
 
-      <article class="collections-3">
-          <img src="img/cards/tiny.jpg" alt="tiny dog"/>
-          <div class="container">
-            <div class="content">
-              <h3>TINY PUPS</h3>
-              <p>Dogs so small you can't even see them.</p>
-              <button onclick="">Browse</button>
+        <article class="collections-2">
+            <img src="img/cards/costume.jpg" alt="dog in a costume"/>
+            <div class="container">
+              <div class="content">
+                <h3>PUPS IN COSTUMES</h3>
+                <p>Silly photos of dogs in costumes.</p>
+                <button onclick="">Browse</button>
+              </div>
             </div>
-          </div>
-      </article>
+        </article>
 
-      <article class="collections-4">
-          <img src="img/cards/sleepy.jpg" alt="sleeping dog"/>
-          <div class="container">
-            <div class="content">
-              <h3>SLEEPY PUPS</h3>
-              <p>Shhh! The dogs are sleeping!</p>
-              <button onclick="">Browse</button>
+        <article class="collections-3">
+            <img src="img/cards/tiny.jpg" alt="tiny dog"/>
+            <div class="container">
+              <div class="content">
+                <h3>TINY PUPS</h3>
+                <p>Dogs so small you can't even see them.</p>
+                <button onclick="">Browse</button>
+              </div>
             </div>
+        </article>
+
+        <article class="collections-4">
+            <img src="img/cards/sleepy.jpg" alt="sleeping dog"/>
+            <div class="container">
+              <div class="content">
+                <h3>SLEEPY PUPS</h3>
+                <p>Shhh! The dogs are sleeping!</p>
+                <button onclick="">Browse</button>
+              </div>
+            </div>
+        </article>
+        
+        <article class="collections-5">
+            <img src="img/cards/happy.jpg" alt="happy dog"/>
+            <div class="container">
+              <div class="content">
+                <h3>HAPPY PUPS</h3>
+                <p>May you be as happy as these dogs are!</p>
+                <button onclick="">Browse</button>
+              </div>
           </div>
-      </article>
-      
-      <article class="collections-5">
-          <img src="img/cards/happy.jpg" alt="happy dog"/>
-          <div class="container">
-            <div class="content">
-              <h3>HAPPY PUPS</h3>
-              <p>May you be as happy as these dogs are!</p>
-              <button onclick="">Browse</button>
-            </div>
-        </div>
-      </article>
+        </article>
+      </section>
+
 
     </section>
 
     <!--footer-->
-    <!--Seems like this isn't working? cant get the background to span the whole size.  and for some reason the newsleter section is excluded?-->
+    <!--Seems like this isn't working?-->
+     <!--To fix this I think I have to seperate in sections? idk. help!-->
+
       <footer class="container">
         <div class="content">
       
-          <!--Was this the dumbest way to do this? should i have made a grid with columns and rows?-->
+        <!--Was this the dumbest way to do this? should i have made a grid with columns and rows?-->
         <div class="footer container">
           <div class="content">
             <h4>Locations</h4>
@@ -212,7 +215,7 @@
           </div>
         </div>
 
-        <div class="newsletter container footer">
+        <div class="newsletter footer">
           <div class="content">
             <h4>Newsletter Sign Up</h4>
             <form action="/action_page.php">
@@ -223,7 +226,7 @@
           </div>
         </div>
 
-        <div class="follow">
+        <div class="follow footer content">
           <h4>Follow Us</h4>
           <ul class="follow">
             <li><img src="img/logo/youtube.svg" alt="youtube icon"/></li>

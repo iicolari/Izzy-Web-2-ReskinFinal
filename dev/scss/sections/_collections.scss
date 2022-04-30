@@ -8,23 +8,49 @@
     }
 }
 
-.collections-1{
-    background-color: #F4AC45;
-}
+.cards{
+    display: grid;
+    gap: 16px;
+    grid-template-rows: auto;
+//cannot change color of button
+//how to get buttons to line up even if text doesnt?
+    .content{
+        margin-bottom: 1em;
+    }
 
-.collections-2{
-    background-color: #F4AC45;
-}
+    .collections-1{
+        background-color: #F4AC45;
+    }
+    
+    .collections-2{
+        background-color: #F4AC45;
+    }
+    
+    .collections-3{
+        background-color: #F4AC45;
+    }
+    
+    .collections-4{
+        background-color: #F4AC45;
+    }
+    
+    .collections-5{
+        background-color: #F4AC45;
+    }
+        
+//Have a feeling that I should be setting up columns like in the figma file but that wasnt working?? idk
+    @include md{
+        grid-template-columns: 50% 50%;
+        padding: 16px;
+    }
 
-.collections-3{
-    background-color: #F4AC45;
-}
+    @include lg{
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-.collections-4{
-    background-color: #F4AC45;
-}
-
-.collections-5{
-    background-color: #F4AC45;
+    @include xl{
+        padding-left: 194px;
+        padding-right: 194px;
+    }
 }
 
