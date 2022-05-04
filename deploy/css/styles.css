@@ -369,16 +369,32 @@ body {
 }
 body p {
   font-size: 16px;
+  margin: 0;
+}
+body h1, body h2, body h3, body h4, body h5 {
+  margin: 0;
 }
 body h1 {
   font-family: "Roboto Condensed", sans-serif;
 }
 body h2 {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Cabin", sans-serif;
+  font-size: 20px;
+  color: #637275;
+}
+@media (min-width: 992px) {
+  body h2 {
+    font-size: 37px;
+  }
 }
 body h3 {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 27px;
+  font-size: 22px;
+}
+@media (min-width: 768px) {
+  body h3 {
+    font-size: 30px;
+  }
 }
 body h4 {
   font-family: "Roboto Condensed", sans-serif;
@@ -421,16 +437,38 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  background-color: #203842;
+  padding: 10px;
+}
+
 /* =============
     Footer
 ============= */
-.footer {
-  display: grid;
+footer {
   background-color: #203842;
+  display: grid;
 }
-.footer ul {
+footer ul {
   list-style: none;
   padding: 0;
+}
+
+.newsletter button {
+  background-color: #D96C06;
+  border: none;
+  margin: 10px;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  color: white;
+}
+.newsletter button:hover {
+  cursor: pointer;
+}
+.newsletter input {
+  height: 50px;
+  width: 287px;
 }
 
 .follow {
@@ -448,6 +486,42 @@ textarea {
 ============= */
 .search {
   text-align: center;
+}
+.search .content form {
+  display: flex;
+  margin: 10px;
+}
+.search .content form input {
+  width: 100%;
+  color: #203842;
+  font-size: 13px;
+  border: none;
+  border-bottom: 1px solid #70c1b3;
+}
+@media (min-width: 768px) {
+  .search .content form input {
+    font-size: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .search .content form input {
+    font-size: 35px;
+  }
+}
+.search .content form ::placeholder {
+  color: #203842;
+}
+.search .content form ::ms-input-placeholder {
+  color: #203842;
+}
+.search .content form button {
+  background-color: #D96C06;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
 }
 
 /* =============
@@ -471,12 +545,25 @@ textarea {
 .banners .content {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.banners .content a {
+  color: white;
+  text-decoration: none;
+}
+.banners .content a img {
+  display: inline-block;
+  margin: 30px;
+}
+.banners p {
+  color: white;
 }
 .banners .banners-1 {
-  background-color: teal;
+  background-color: #70c1b3;
 }
 .banners .banners-2 {
-  background-color: turquoise;
+  background-color: #b2dbbf;
 }
 @media (min-width: 768px) {
   .banners {
@@ -493,6 +580,7 @@ textarea {
     Start Here
 ============= */
 .start-here {
+  margin-top: 10px;
   display: grid;
   gap: 10px;
 }
@@ -502,11 +590,32 @@ textarea {
   grid-template-areas: "img content";
   margin-bottom: 1em;
 }
+.start-here .content h3 {
+  font-family: "cabin";
+  color: white;
+}
+.start-here .content button {
+  background-color: #D96C06;
+  border: none;
+  margin: 10px;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  color: white;
+}
+.start-here .content button:hover {
+  cursor: pointer;
+}
+.start-here .content button img {
+  text-align: center;
+}
 .start-here .card-1 {
   background-color: #247BA0;
+  padding-top: 20px;
 }
 .start-here .card-2 {
   background-color: #247BA0;
+  padding-top: 20px;
 }
 @media (min-width: 768px) {
   .start-here {
@@ -559,9 +668,22 @@ textarea {
   display: grid;
   gap: 16px;
   grid-template-rows: auto;
+  margin-bottom: 10px;
 }
 .cards .content {
   margin-bottom: 1em;
+}
+.cards button {
+  background-color: #D96C06;
+  border: none;
+  margin: 10px;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  color: white;
+}
+.cards button:hover {
+  cursor: pointer;
 }
 .cards .collections-1 {
   background-color: #F4AC45;

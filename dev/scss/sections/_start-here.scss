@@ -3,6 +3,7 @@
 ============= */
 
 .start-here{
+    margin-top: 10px;
     display:grid;
     gap: 10px;
 
@@ -11,14 +12,41 @@
         grid-template-columns: 3fr 1fr;
         grid-template-areas: "img content";
         margin-bottom: 1em;
+
+        h3{
+            font-family: 'cabin';
+            color: white;
+        }
+
+        button{
+            background-color: $orange;
+            border: none;
+            margin: 10px;
+            height: 30px;
+            width: 100px;
+            text-align: center;
+            color: white;
+
+            &:hover{
+                cursor: pointer;
+            }
+
+        img{
+            text-align: center;
+        }
+
+        }
+        
     }
 
     .card-1{
         background-color: #247BA0;
+        padding-top: 20px;
     }
     
     .card-2{
-        background-color: #247BA0
+        background-color: #247BA0;
+        padding-top: 20px;
     }
 
     @include md{

@@ -2,13 +2,35 @@
     Footer
 ============= */
 
-    .footer{
-        display:grid;
+    footer{
         background-color: $navy;
+        display:grid;
 
         ul{
             list-style: none;
             padding:0;
+        }
+    }
+
+    .newsletter{
+        button{
+            background-color: $orange;
+            border: none;
+            margin: 10px;
+            height: 30px;
+            width: 100px;
+            text-align: center;
+            color: white;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        input{
+            height: 50px;
+            width: 287px;
+
         }
     }
 
@@ -23,5 +45,3 @@
         }
 
     }
-
-    //why doesnt background go over gutter too? maybe there is a problem with my variables

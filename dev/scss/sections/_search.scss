@@ -4,6 +4,47 @@
 
 .search{
     text-align: center;
-}
 
-//how to span searchbar the entire width of the page?
+    .content{
+        form{
+            display: flex;
+            margin: 10px;
+
+            input{
+                width: 100%;
+                color: $navy;
+                font-size: 13px;
+
+                border: none;
+                border-bottom: 1px solid $teal;
+
+                @include md{
+                    font-size: 30px;
+                }
+
+                @include lg{
+                    font-size: 35px;
+                }
+            }
+
+            ::placeholder{
+                color: $navy
+                //It isnt recognizing opacity?
+            }
+
+            ::ms-input-placeholder{
+                color: $navy;
+            }
+
+            button{
+                background-color: $orange;
+                border: none;
+                border-radius: 5px;
+                padding: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+}

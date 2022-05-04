@@ -12,10 +12,24 @@
     display: grid;
     gap: 16px;
     grid-template-rows: auto;
-//cannot change color of button
-//how to get buttons to line up even if text doesnt?
+    margin-bottom: 10px;
+
     .content{
         margin-bottom: 1em;
+    }
+
+    button{
+        background-color: $orange;
+        border: none;
+        margin: 10px;
+        height: 30px;
+        width: 100px;
+        text-align: center;
+        color: white;
+
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     .collections-1{

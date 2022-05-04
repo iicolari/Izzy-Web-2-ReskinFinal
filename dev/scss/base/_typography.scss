@@ -1,12 +1,17 @@
 /* =============
     Typography
-============= */
+============= */ 
 
 body{
     font-family: 'Cabin', sans-serif;
 
     p{
         font-size: 16px;
+        margin: 0;
+    }
+
+    h1, h2, h3, h4, h5 {
+        margin: 0;
     }
 
     h1{
@@ -14,12 +19,22 @@ body{
     }
 
     h2{
-        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Cabin', sans-serif;
+        font-size: 20px;
+        color: rgba(99, 114, 117, 1);
+
+        @include lg{
+            font-size: 37px;
+        }
     }
 
     h3{
         font-family: 'Roboto Condensed', sans-serif;
-        font-size: 27px;
+        font-size: 22px;
+
+        @include md{
+            font-size: 30px;
+        }
     }
 
     h4{

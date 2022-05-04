@@ -6,16 +6,32 @@
     display: grid;
 
     .content{
-        display:grid;
+        display: grid;
         grid-template-columns: 3fr 1fr;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        a{
+            color: white;
+            text-decoration: none;
+
+            img{
+                display:inline-block;
+                margin: 30px;
+            }
+        }
+    }
+
+    p{
+        color: white;
     }
 
     .banners-1{
-        background-color: teal
+        background-color: rgba(112, 193, 179, 1)
     }
 
     .banners-2{
-        background-color: turquoise
+        background-color: rgba(178, 219, 191, 1)
     }
 
     @include md{
