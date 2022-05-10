@@ -544,7 +544,7 @@ footer ul {
 }
 .banners .content {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -555,6 +555,9 @@ footer ul {
 .banners .content a img {
   display: inline-block;
   margin: 30px;
+}
+.banners .content .arrow p {
+  display: none;
 }
 .banners p {
   color: white;
@@ -636,6 +639,14 @@ footer ul {
 .photo-grid img {
   width: 100%;
 }
+.photo-grid .image-3 {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .photo-grid .image-3 {
+    display: block;
+  }
+}
 .photo-grid ul {
   list-style: none;
   padding: 0;
@@ -643,12 +654,27 @@ footer ul {
 @media (min-width: 768px) {
   .photo-grid {
     display: grid;
-    grid-template-columns: 50% auto;
+  }
+  .photo-grid .image-1 {
+    float: left;
+    width: 50%;
+  }
+  .photo-grid .image-2 {
+    float: right;
+    width: 50%;
   }
 }
 @media (min-width: 992px) {
   .photo-grid {
-    grid-template-columns: 60% auto;
+    display: grid;
+  }
+  .photo-grid .image-1 {
+    float: left;
+    width: 60%;
+  }
+  .photo-grid .image-2 {
+    float: right;
+    width: 40%;
   }
 }
 @media (min-width: 1200px) {

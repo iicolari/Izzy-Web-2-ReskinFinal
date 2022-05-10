@@ -8,6 +8,16 @@
         width: 100%
     }
 
+    .image-3{
+        display: none;
+
+        @include xl{
+            display: block;
+        }
+
+
+    }
+
     ul{
         list-style: none;
         padding:0;
@@ -15,11 +25,30 @@
 
     @include md{
         display: grid;
-        grid-template-columns: 50% auto
+
+            .image-1{
+                float: left;
+                width: 50%;
+            }
+
+            .image-2{
+                float: right;
+                width: 50%;
+            }
     }
 
     @include lg{
-        grid-template-columns: 60% auto
+        display: grid;
+
+            .image-1{
+                float: left;
+                width: 60%;
+            }
+
+            .image-2{
+                float: right;
+                width: 40%;
+            }
     }
 
     @include xl{
@@ -29,6 +58,3 @@
     }
 
 }
-
-//i cant get the third image to go away!
-//also the grid isnt working.  obviously my fault but im confused
